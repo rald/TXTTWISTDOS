@@ -1,0 +1,10 @@
+tt.exe: tt.c font.h gameboy.h
+	rescan
+	gcc tt.c -o tt.exe -Os -s -Wall -Wextra
+
+.PHONY: clean
+
+clean:
+	del tt.exe
+
+
